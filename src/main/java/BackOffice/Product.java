@@ -8,7 +8,7 @@ package BackOffice;
 
 public class Product {
 
-    private int id;
+    private final int id;
     private String name;
     private double price;
     private int quantity;
