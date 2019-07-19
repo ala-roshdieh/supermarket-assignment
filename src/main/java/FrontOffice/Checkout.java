@@ -11,10 +11,14 @@ import java.util.ArrayList;
  */
 
 public abstract class Checkout extends Cart {
+
     private int total;
     private int discount;
 
-    //This method calculates a generic total. The total calculated will be specified during implementation.
+    /**
+     * @param productList an arraylist of products to iterate
+     * @return returns a total as a double
+     */
     protected abstract double calculateTotal(ArrayList<Product> productList);
 
     public int getTotal() {
@@ -23,6 +27,14 @@ public abstract class Checkout extends Cart {
 
     public int getDiscount() {
         return discount;
+    }
+
+    public void setTotal(int total) {
+        this.total = total;
+    }
+
+    public void setDiscount(int discount) {
+        this.discount = discount;
     }
 
 }
