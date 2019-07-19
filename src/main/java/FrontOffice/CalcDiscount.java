@@ -10,8 +10,7 @@ import java.util.ArrayList;
  */
 public class CalcDiscount extends Checkout{
 
-    protected double calculateTotal(ArrayList<Product> productList) {
+    protected void calculateTotal(ArrayList<Product> productList) {
 
-        return 0;
     }
 }

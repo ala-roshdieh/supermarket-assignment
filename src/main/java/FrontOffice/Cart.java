@@ -12,6 +12,7 @@ import java.util.ArrayList;
 
 public class Cart {
 
+
     private ArrayList<Product> list =  new ArrayList<Product>();
 
 
@@ -21,6 +22,7 @@ public class Cart {
 
     public void addProduct(Product product) {
         list.add(product);
+        System.out.println(product.getName() + " has been added to the cart");
     }
 
     public void removeProduct(Product productToRemove) {
@@ -28,6 +30,7 @@ public class Cart {
              list) {
             if(productToRemove.equals(product)) {
                 list.remove(product);
+                System.out.println(product.getName() + " has been removed from the cart");
             } else {
                 System.out.println("The product you want to remove isn't found!");
             }

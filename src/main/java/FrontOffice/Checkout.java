@@ -17,11 +17,11 @@ public abstract class Checkout extends Cart {
 
     /**
      * @param productList an arraylist of products to iterate
-     * @return returns a total as a double
      */
-    protected abstract double calculateTotal(ArrayList<Product> productList);
+    protected abstract void calculateTotal(ArrayList<Product> productList);
 
     public int getTotal() {
+        System.out.println("Your total is " + total);
         return total;
     }
 
